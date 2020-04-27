@@ -1,0 +1,39 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="template.master.vb" Inherits="photoGallery.template" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Photo gallery </title>
+
+    <script src="/js/jquery-3.5.0.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>   
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+                <div class="row">
+                    <div class="col">
+                        <img src="img/logo.gif" class="img-responsive logo" />
+                    </div>
+                    <div class="col">
+                        <asp:Label ID="UserLabel" runat="server" Text="User"></asp:Label>
+                        <asp:TextBox ID="UserMail" runat="server"></asp:TextBox>
+                    </div>
+                </div>
+            </header>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer>
+                <a href="/login.aspx"> go to home </a>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,67 @@
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\prova mvc.dll.config
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\prova mvc.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\prova mvc.pdb
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\csc.exe
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\csc.exe.config
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\csc.rsp
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\csi.exe
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\csi.rsp
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\System.AppContext.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\vbc.exe
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\vbc.exe.config
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\vbc.rsp
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\VBCSCompiler.exe
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\Antlr3.Runtime.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\Newtonsoft.Json.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\System.Web.Helpers.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\System.Web.Mvc.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\System.Web.Optimization.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\System.Web.Razor.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\System.Web.WebPages.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\System.Web.WebPages.Razor.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\WebGrease.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\System.Web.Helpers.xml
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\System.Web.Mvc.xml
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\System.Web.Optimization.xml
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\System.Web.Razor.xml
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\System.Web.WebPages.xml
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\System.Web.WebPages.Razor.xml
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\Newtonsoft.Json.xml
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\Antlr3.Runtime.pdb
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\es\System.Web.Razor.resources.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\obj\Debug\prova mvc.csprojAssemblyReference.cache
+C:\Users\Pol\source\repos\photoGallery\prova mvc\obj\Debug\prova mvc.csproj.CoreCompileInputs.cache
+C:\Users\Pol\source\repos\photoGallery\prova mvc\obj\Debug\prova mvc.csproj.CopyComplete
+C:\Users\Pol\source\repos\photoGallery\prova mvc\obj\Debug\prova mvc.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\obj\Debug\prova mvc.pdb
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\EntityFramework.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\EntityFramework.SqlServer.dll
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\EntityFramework.xml
+C:\Users\Pol\source\repos\photoGallery\prova mvc\bin\EntityFramework.SqlServer.xml
