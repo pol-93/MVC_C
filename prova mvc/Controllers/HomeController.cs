@@ -10,7 +10,8 @@ namespace prova_mvc.Controllers
     {
         
         public ActionResult Index()
-        { 
+        {
+            ViewBag.title = "Sign Up";
             return View();
         }
 
@@ -36,7 +37,7 @@ namespace prova_mvc.Controllers
                 {
                     user Ouser = lst.First();
                     Session["user"] = Ouser;
-                    Response.Redirect("~/Dashboard/index");
+                    return Redirect("~/Dashboard/index");
                 }
                 else { 
                 
@@ -44,6 +45,34 @@ namespace prova_mvc.Controllers
             }
 
                 return View();
+        }
+
+        [HttpPost]
+        public ActionResult signup(String nickname, String email, String password) {
+
+            user adduser = new user();
+            using (imagesGalleryEntities db = new imagesGalleryEntities())
+            {
+                try
+                {
+                    adduser.id = (from user in db.user
+                                  select user.id).Max() + 1;
+                }
+                catch (System.InvalidOperationException ex)
+                {
+                    adduser.id = 0;
+                }
+                adduser.name = nickname;
+                adduser.username = email;
+                adduser.password = password;
+                db.user.Add(adduser);
+                db.SaveChanges();
+
+                Session["user"] = adduser;
+                return Redirect("~/Dashboard/index");
+
+            }
+            return View();
         }
 
 

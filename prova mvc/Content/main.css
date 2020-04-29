@@ -1,0 +1,210 @@
+﻿body {
+}
+
+header {
+    background-color:beige;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0px -5px 15px -4px #888;
+    text-align: center;
+    font-family: Helvetica;
+}
+
+.application-inset .container-fluid{
+    width:100%;
+}
+.body-content {
+    padding-top:30px;
+    padding-bottom:30px;
+}
+@media(min-width: 768px) {
+    html:not(.no-flexboxlegacy) .application-inset {
+        min-height: 100vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        flex-direction: column;
+    }
+
+    html:not(.no-flexboxlegacy) .body-content {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        -webkit-flex: 1;
+        -moz-box-flex: 1;
+        flex: 1;
+    }
+}
+
+    footer > div {
+    padding:10px
+}
+
+    header > .row {
+        box-shadow: 0 1px 30px -7px #888;
+    }
+    a, a > span {
+    color: #000;
+    text-decoration: none;
+}
+
+    a:hover, a:hover > span {
+        color:#888;
+        text-decoration:none;
+    }
+
+.logo {
+    height: auto;
+    padding-top: 7px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+    .logo img {
+        max-width: 56px;
+    }
+    .logo span {
+        padding-left: 15px;
+        text-decoration: none;
+        color: #000;
+        font-family: Helvetica;
+        font-size: 30px;
+    }
+
+    #autentication {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+        -moz-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -moz-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+        #autentication .form-group {
+            margin-left: 15px;
+            margin-bottom: 7.5px;
+            margin-top: 6.5px;
+        }
+    #autentication #Submit {
+        width: 150px;
+    }
+
+.signup-content {
+    padding: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: beige;
+    box-shadow: 0px 0px 15px 0px #888;
+    border-radius: 5px;
+}
+
+    .signup-content .title {
+        padding-bottom:5px;
+        margin-top:0px;
+        display:inline-block;
+        position:relative;
+        margin-bottom:15px;
+    }
+
+        .signup-content .title:after {
+            content:"";
+            display:block;
+            position:absolute;
+            background-color:#000;
+            height:1px;
+            width:100%;
+            bottom:0;
+        }
+
+        #Signup input {
+            max-width: none;
+        }
+
+
+/* LogedSection */
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 0px;
+}
+
+    .navbar-default .navbar-collapse{
+        padding-top: 7.5px;
+        padding-bottom: 7.5px;
+    }
+
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+        color: #000;
+        background-color: #8a6d3b;
+        border-radius: 5px;
+    }
+
+.publish-picture {
+    width:500px;
+    float:none;
+    margin:auto;
+}
+
+    .publish-picture .form-control {
+        max-width: none;
+    }
+
+.dashboard .img_content {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%;
+}
+
+    .dashboard .img_content img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+.dashboard .text_content {
+    padding-top:10px;
+}
+
+.dashboard .text_content .title {
+    font-size: 20px;
+}
+
+    .dashboard .text_content .description {
+        padding-top:5px;
+        font-size: 16px;
+    }

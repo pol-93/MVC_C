@@ -1,58 +1,66 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link href="~/content/main.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <header>
-        <div class="row">
-            <div class="col-md-6">
-                <img src="" />
+    <div class="application-inset">
+        <header class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <a class="logo" href="~/home/index">
+                        <img src="~/img/logo.gif" class="img-responsive" />
+                        <span> Image gallery </span>
+                    </a>
+                </div>
+
+                <div class="col-md-8">
+
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li>@Html.ActionLink("My Pictures", "index", "Dashboard")</li>
+                                    <li><a href="#"> Explore </a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Profile</a></li>
+                                            <li>@Html.ActionLink("Publish", "index", "Publish")</li>
+                                            <li><a href="#">Logout</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                    </nav>
+
+                </div>
+
+
+
             </div>
-            <div class="col-md-6">
-               
-            </div>
+        </header>
+
+        <div class="container body-content">
+            @RenderBody()
         </div>
-    </header>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Nombre de la aplicación", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
-                </ul>
-            </div>
-        </div>
-        <div class="logIn">
-            <form action="/" id="autentication" method="post">
-                <input id="username" name="username" class="form-control" type="text" />
-                <input id="Password" name="password" class="form-control" type="password" />
-                <input id="Submit" class="form-control btn btn-success" type="submit" value="submit" />
-            </form>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+            <div class="container">
+                <div>&copy; @DateTime.Now.Year - My aplication ASP.NET</div>
+            </div>
         </footer>
     </div>
-
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

@@ -4,11 +4,12 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="31242ce00217463880b55f2bad393a83" Name="Diagram1">
-        <EntityTypeShape EntityType="imagesGalleryModel.comments" Width="1.5" PointX="5.25" PointY="4.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="imagesGalleryModel.pictures" Width="1.5" PointX="2.375" PointY="5.75" IsExpanded="true" />
+      <Diagram DiagramId="717f2e3abd2b4c8b8a946cd60a715a09" Name="Diagram1">
+        <EntityTypeShape EntityType="imagesGalleryModel.comments" Width="1.5" PointX="6" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="imagesGalleryModel.pictures" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
         <EntityTypeShape EntityType="imagesGalleryModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="imagesGalleryModel.user" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="imagesGalleryModel.user" Width="1.5" PointX="0.75" PointY="3.125" IsExpanded="true" />
+        <AssociationConnector Association="imagesGalleryModel.FK_comments_comments" ManuallyRouted="false" />
         <AssociationConnector Association="imagesGalleryModel.FK_comments_pictures" ManuallyRouted="false" />
         <AssociationConnector Association="imagesGalleryModel.FK_comments_user" ManuallyRouted="false" />
         <AssociationConnector Association="imagesGalleryModel.FK_pictures_user" ManuallyRouted="false" />

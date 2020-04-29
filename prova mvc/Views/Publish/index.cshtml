@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Publish";
+    Layout = "~/Views/shared/_LayoutLogin.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 publish-picture">
+            <h2>@ViewBag.Title</h2>
+
+            <form action="~/publish/Add" id="publish" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="post"> Post name </label>
+                    <input id="post" name="post" class="form-control" type="text" />
+                </div>
+                <div class="form-group">
+                    <label for="description"> Description </label>
+                    <textarea id="description" name="description" class="form-control" type="text">
+                    </textarea>
+                </div>
+                <div class="form-group">
+                    <label for="image"> Picture </label>
+                    <input id="image" name="imageFile" class="form-control" type="file" required/>
+                </div>
+                <div class="form-group">
+                    <button id="Submit" class="form-control btn btn-success" type="submit"> Submit </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

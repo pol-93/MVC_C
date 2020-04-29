@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
+using prova_mvc.Models;
+using prova_mvc.Models.TableViewModels;
 namespace prova_mvc.Controllers
 {
     public class DashboardController : Controller
@@ -11,7 +12,22 @@ namespace prova_mvc.Controllers
         // GET: Dashboard
         public ActionResult Index()
         {
-            return View();
+            user currentUser = (user) Session["user"]; 
+            List<PicturesTableViewModel> lst = null;
+            using (imagesGalleryEntities db = new imagesGalleryEntities())
+            {
+                lst = (from p in db.pictures
+                       where p.user_id == currentUser.id
+                       select new PicturesTableViewModel
+                       {
+                           id = p.id,
+                           name = p.name,
+                           description = p.description,
+                           user_id = p.user_id,
+                           picture_varchar = p.picture_path
+                       }).ToList();
+            }
+                return View(lst);
         }
 
         // GET: Dashboard/Details/5

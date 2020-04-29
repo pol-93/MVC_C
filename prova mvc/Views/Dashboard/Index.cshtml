@@ -1,8 +1,29 @@
-﻿
+﻿@model List<prova_mvc.Models.TableViewModels.PicturesTableViewModel>
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "My Pictures";
     Layout = "~/Views/shared/_LayoutLogin.cshtml";
 }
 
-<h2>Index</h2>
+<h2> My pictures </h2>
+
+<div class="container-fluid dashboard">
+    <div class="row">
+        @foreach (var oElemento in Model) { 
+            <div class="col-md-4">
+                <div class="img_content">
+                    <img src="@oElemento.picture_varchar" />
+                </div>
+                <div class="text_content">
+                    <div class="title">
+                        @oElemento.name
+                    </div>
+                    <div class="Description">
+                        @oElemento.description
+                    </div>
+                </div>
+            </div>
+        }
+        
+    </div>
+</div>
 

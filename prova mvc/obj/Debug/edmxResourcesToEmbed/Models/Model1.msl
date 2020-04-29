@@ -5,10 +5,11 @@
       <EntityTypeMapping TypeName="imagesGalleryModel.comments">
         <MappingFragment StoreEntitySet="comments">
           <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="comment_date" ColumnName="comment_date" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
           <ScalarProperty Name="user_id" ColumnName="user_id" />
           <ScalarProperty Name="picture_id" ColumnName="picture_id" />
-          <ScalarProperty Name="data" ColumnName="data" />
-          <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="parent_comment_id" ColumnName="parent_comment_id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -18,9 +19,9 @@
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="name" ColumnName="name" />
           <ScalarProperty Name="description" ColumnName="description" />
-          <ScalarProperty Name="picture" ColumnName="picture" />
+          <ScalarProperty Name="picture_path" ColumnName="picture_path" />
+          <ScalarProperty Name="publication_date" ColumnName="publication_date" />
           <ScalarProperty Name="user_id" ColumnName="user_id" />
-          <ScalarProperty Name="data" ColumnName="data" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
