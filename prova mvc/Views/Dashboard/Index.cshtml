@@ -3,27 +3,38 @@
     ViewBag.Title = "My Pictures";
     Layout = "~/Views/shared/_LayoutLogin.cshtml";
 }
-
-<h2> My pictures </h2>
-
+    <div class="container-fluid">
+        <h2 class="sectionTitle"> My pictures </h2>
+    </div>
 <div class="container-fluid dashboard">
     <div class="row">
-        @foreach (var oElemento in Model) { 
-            <div class="col-md-4">
-                <div class="img_content">
-                    <img src="@oElemento.picture_varchar" />
-                </div>
-                <div class="text_content">
-                    <div class="title">
-                        @oElemento.name
+
+        @if (Model != null && Model.Count() != 0)
+        {
+            foreach (var oElemento in Model)
+            {
+                <div class="col-md-4">
+                    <div class="img_content">
+                        <img src="@oElemento.picture_varchar" />
                     </div>
-                    <div class="Description">
-                        @oElemento.description
+                    <div class="text_content">
+                        <div class="title">
+                            @oElemento.name
+                        </div>
+                        <div class="Description">
+                            @oElemento.description
+                        </div>
                     </div>
                 </div>
+            }
+        }
+        else { 
+            <div class="xol-xs-12">
+                <span> You don't publish any picture yet. </span>
             </div>
         }
-        
+
+
     </div>
 </div>
 

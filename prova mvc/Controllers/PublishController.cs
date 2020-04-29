@@ -38,12 +38,13 @@ namespace prova_mvc.Controllers
                     addpicture.id = 0;
                 };
                 addpicture.name = post;
-                    addpicture.description = description;
-                    var Ouser = (user)Session["User"];
-                    addpicture.user_id = Ouser.id;
-                    addpicture.picture_path = "/img/userspictures/" + filename;
-                    filename = Path.Combine(Server.MapPath("~/img/userspictures/"), filename);
-                    image.imageFile.SaveAs(filename);
+                addpicture.description = description;
+                addpicture.publication_date = DateTime.Now;
+                var Ouser = (user)Session["User"];
+                addpicture.user_id = Ouser.id;
+                addpicture.picture_path = "/img/userspictures/" + filename;
+                filename = Path.Combine(Server.MapPath("~/img/userspictures/"), filename);
+                image.imageFile.SaveAs(filename);
                 
                 
                 db.pictures.Add(addpicture);
