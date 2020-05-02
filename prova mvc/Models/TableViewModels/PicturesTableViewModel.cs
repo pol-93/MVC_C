@@ -11,6 +11,7 @@ namespace prova_mvc.Models.TableViewModels
         public string name;
         public string description;
         public int? user_id;
+        public string publicationDate;
         public string picture_varchar;
     }
 }

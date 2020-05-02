@@ -4,28 +4,34 @@
     Layout = "~/Views/shared/_LayoutLogin.cshtml";
 }
 
-<h2> My pictures </h2>
+    
 
-<div class="container-fluid dashboard">
-    <div class="row">
-        @foreach (var oElemento in Model) { 
-        <a href="/picture/index?pictureId=@oElemento.id">
-            <div class="col-md-4">
-                <div class="img_content">
-                    <img src="@oElemento.picture_varchar" />
-                </div>
-                <div class="text_content">
-                    <div class="title">
-                        @oElemento.name
-                    </div>
-                    <div class="Description">
-                        @oElemento.description
-                    </div>
+        <div class="container-fluid dashboard">
+            <div class="row">
+                <div class="col-xs-12 main-title">
+                    <h2 class="title"> My pictures </h2>
                 </div>
             </div>
-        </a>
-        }
-        
-    </div>
-</div>
+            <div class="row">
+                @foreach (var oElemento in Model)
+                {
+                    <a href="/picture/index?pictureId=@oElemento.id">
+                        <div class="col-md-4">
+                            <div class="img_content">
+                                <img src="@oElemento.picture_varchar" />
+                            </div>
+                            <div class="text_content">
+                                <div class="title">
+                                    @oElemento.name
+                                </div>
+                                <div class="Description">
+                                    @oElemento.description
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                }
+
+            </div>
+        </div>
 

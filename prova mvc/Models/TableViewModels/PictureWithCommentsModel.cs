@@ -12,11 +12,14 @@ namespace prova_mvc.Models.TableViewModels
             public List<PicturesTableViewModel> picture { get; set; }
             public List<ComentsTableViewModel> comments { get; set; }
 
-            public PictureWithCommentsModel()
+            public List<UserTableViewModel> user { get; set; }
+
+        public PictureWithCommentsModel()
             {
                 this.picture = new List<PicturesTableViewModel>();
                 this.comments = new List<ComentsTableViewModel>();
-            }
+                this.user = new List<UserTableViewModel>();
+        }
         
 
     }

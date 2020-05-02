@@ -128,22 +128,24 @@ footer {
     border-radius: 5px;
 }
 
-    .signup-content .title {
-        padding-bottom:5px;
-        margin-top:0px;
-        display:inline-block;
-        position:relative;
-        margin-bottom:15px;
+    .signup-content .title,
+    .main-title .title {
+        padding-bottom: 5px;
+        margin-top: 0px;
+        display: inline-block;
+        position: relative;
+        margin-bottom: 15px;
     }
 
-        .signup-content .title:after {
-            content:"";
-            display:block;
-            position:absolute;
-            background-color:#000;
-            height:1px;
-            width:100%;
-            bottom:0;
+        .signup-content .title:after,
+        .main-title .title:after {
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: #000;
+            height: 1px;
+            width: 100%;
+            bottom: 0;
         }
 
         #Signup input {
@@ -159,9 +161,9 @@ footer {
     margin-bottom: 0px;
 }
 
-    .navbar-default .navbar-collapse{
-        padding-top: 7.5px;
-        padding-bottom: 7.5px;
+    .navbar-default .navbar-collapse {
+        padding-top: 10.5px;
+        padding-bottom: 10.5px;
     }
 
     .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -201,9 +203,10 @@ footer {
     padding-top:10px;
 }
 
-.dashboard .text_content .title {
-    font-size: 20px;
-}
+    .dashboard .text_content .title,
+    .picture-detail .description .title {
+        font-size: 20px;
+    }
 
     .dashboard .text_content .description {
         padding-top:5px;
@@ -227,3 +230,86 @@ footer {
         top:calc(100% - 1px);
         background-color:#000
     }
+
+.picture-detail .picture {
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px 0 #545454;
+    border-radius: 5px;
+    margin-bottom:20px;
+}
+    .picture-detail .picture img {
+        max-height: 500px;
+        margin: 0 auto;
+        width: 100%;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+
+.icon {
+    width:30px;
+    height:30px;
+    fill:#000;
+}
+.user .icon {
+    vertical-align:middle;
+    width:15px;
+}
+
+.user .reply .icon {
+    vertical-align: middle;
+    width: 12px;
+}
+.user .circle, .user .reply .circle{
+    width: 4px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+    .user span.username {
+    vertical-align: middle;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.user .reply span.username {
+    vertical-align: middle;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.user .picture-info {
+    font-size:20px;
+    padding-top:18px
+}
+
+.user .picture-info .description{
+    font-size: 14px;
+}
+    .user .picture-info .date {
+        font-size: 12px;
+        padding-top: 5px;
+    }
+
+    .user .picture-info .icon {
+        width: 15px;
+        height: 15px;
+        display:inline-block;
+        vertical-align: middle;
+    }
+    .user .picture-info .picture-date{
+        font-size:12px;
+        vertical-align:middle;
+        display:inline-block;
+        padding-left:5px;
+    }
+.user .comments-block {
+    padding-top:30px;
+}
+
+.comment .user-comment {
+    padding-left: 25px;
+    font-size:14px;
+}
+.comment .replys {
+    padding-left:15px;
+}

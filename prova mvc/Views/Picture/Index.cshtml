@@ -3,47 +3,136 @@
     ViewBag.Title = "My Pictures";
     Layout = "~/Views/shared/_LayoutLogin.cshtml";
 }
-<div class="container-fluid">
-    <h2 class="sectionTitle"> My pictures </h2>
-</div>
-<div class="container-fluid picture-detail">
+
+<div class="picture-detail">
     <div class="row">
-        <div class="col-xs-7">
-            <div class="picture">
-                @if (Model.picture != null && Model.picture.Count() != 0) {
+        <div class="col-md-6">
+            
+                @if (Model.picture != null && Model.picture.Count() != 0)
+                {
                     foreach (var mainpicture in Model.picture)
                     {
-                        <img src="@mainpicture.picture_varchar" />
+                        <div class="picture">
+                            <img src="@mainpicture.picture_varchar" />
+                        </div>
                     }
                 }
-            </div>
-        </div>
-        <div class="col-xs-5">
-            
-            @if (Model.comments != null && Model.comments.Count() != 0)
-            {
-                foreach (var maincomments in Model.comments)
+
+         </div>
+        <div class="col-md-6">
+            <div class="user">
+                @if (Model.user != null && Model.user.Count() != 0)
                 {
-                   
-                    <div class="col-md-12">
-                        <div class="comment">
-                            <div>@maincomments.comments </div>
+                    foreach (var mainuser in Model.user)
+                    {
+                        <a href="~/dashboard/profile?userId=@mainuser.id">
+                            <svg class="icon">
+                                <use xlink:href="#user" />
+                            </svg>
+                            <span class="username">
+                                @mainuser.username
+                            </span>
+                        </a>
+                    }
+                }
+                @if (Model.picture != null && Model.picture.Count() != 0)
+                {
+                    foreach (var mainpicture in Model.picture)
+                    {
+                        <div class="picture-info">
+
+                            <div class="title">
+                                @mainpicture.name
+                            </div>
+                            <div class="description">
+                                @mainpicture.description
+                            </div>
+                            <div class="date">
+                                <svg class="icon">
+                                    <use xlink:href="#clock" />
+                                </svg>
+                                <span class="picture-date">
+                                    @mainpicture.publicationDate
+                                </span>
+                            </div>
                         </div>
-                        @if (maincomments.childComments.Count > 0)
-                        {
-                            foreach (var childComments in maincomments.childComments)
-                            {
-                                <div class="childElement">
-                                    <div>@childComments.comments </div>
-                                </div>
-                            }
-                        }
-                    </div>
-                    
+                    }
                 }
 
-
-            }
+                @if (Model.comments != null && Model.comments.Count() != 0)
+                {
+                    <div class="comments-block">
+                        @foreach (var maincomments in Model.comments)
+                        {
+                            <div class="comment">
+                                <div class="comment-container">
+                                    <div class="comment-user-name">
+                                        <svg class="icon">
+                                            <use xlink:href="#user" />
+                                        </svg>
+                                        <span class="username">
+                                            @maincomments.username
+                                        </span>
+                                        <span>
+                                            @maincomments.comments
+                                        </span>
+                                        <div class="replys-link">
+                                            <button class="reply-comment">
+                                                <span>reply</span>
+                                            </button>
+                                            @if (maincomments.childComments.Count > 0)
+                                            {
+                                                <svg class="icon circle">
+                                                    <use xlink:href="#circle" />
+                                                </svg>
+                                                <button class="hide-replys">
+                                                    <span> hide replys </span>
+                                                </button>
+                                            }
+                                        </div>
+                                    </div>
+                                    <div class="user-comment">
+                                        <div class="replys">
+                                            @if (maincomments.childComments.Count > 0)
+                                            {
+                                                foreach (var childComments in maincomments.childComments)
+                                                {
+                                                    <div class="reply">
+                                                        <svg class="icon">
+                                                            <use xlink:href="#user" />
+                                                        </svg>
+                                                        <span class="username">
+                                                            <span>@childComments.username</span>
+                                                            <span>
+                                                                @childComments.comments
+                                                            </span>
+                                                        </span>
+                                                        <div class="replys-link">
+                                                            <button class="reply-comment">
+                                                                <span>reply</span>
+                                                            </button>
+                                                            @if (childComments.childComments.Count > 0)
+                                                            {
+                                                                <svg class="icon circle">
+                                                                    <use xlink:href="#circle" />
+                                                                </svg>
+                                                                <button class="see-replys">
+                                                                    <span>view @childComments.childComments.Count replys </span>
+                                                                </button>
+                                                            }
+                                                        </div>
+                                                    </div>
+                                                }
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        }
+                    </div>
+                }
+            </div>
         </div>
     </div>
 </div>
