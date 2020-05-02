@@ -4,6 +4,7 @@
     <EntitySetMapping Name="comments">
       <EntityTypeMapping TypeName="imagesGalleryModel.comments">
         <MappingFragment StoreEntitySet="comments">
+          <ScalarProperty Name="position" ColumnName="position" />
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="comment_date" ColumnName="comment_date" />
           <ScalarProperty Name="comment" ColumnName="comment" />

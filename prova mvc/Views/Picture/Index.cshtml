@@ -1,0 +1,50 @@
+﻿@model prova_mvc.Models.TableViewModels.PictureWithCommentsModel
+@{
+    ViewBag.Title = "My Pictures";
+    Layout = "~/Views/shared/_LayoutLogin.cshtml";
+}
+<div class="container-fluid">
+    <h2 class="sectionTitle"> My pictures </h2>
+</div>
+<div class="container-fluid picture-detail">
+    <div class="row">
+        <div class="col-xs-7">
+            <div class="picture">
+                @if (Model.picture != null && Model.picture.Count() != 0) {
+                    foreach (var mainpicture in Model.picture)
+                    {
+                        <img src="@mainpicture.picture_varchar" />
+                    }
+                }
+            </div>
+        </div>
+        <div class="col-xs-5">
+            
+            @if (Model.comments != null && Model.comments.Count() != 0)
+            {
+                foreach (var maincomments in Model.comments)
+                {
+                   
+                    <div class="col-md-12">
+                        <div class="comment">
+                            <div>@maincomments.comments </div>
+                        </div>
+                        @if (maincomments.childComments.Count > 0)
+                        {
+                            foreach (var childComments in maincomments.childComments)
+                            {
+                                <div class="childElement">
+                                    <div>@childComments.comments </div>
+                                </div>
+                            }
+                        }
+                    </div>
+                    
+                }
+
+
+            }
+        </div>
+    </div>
+</div>
+

@@ -5,9 +5,9 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="717f2e3abd2b4c8b8a946cd60a715a09" Name="Diagram1">
-        <EntityTypeShape EntityType="imagesGalleryModel.comments" Width="1.5" PointX="6" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="imagesGalleryModel.comments" Width="1.875" PointX="5.625" PointY="5.125" IsExpanded="true" />
         <EntityTypeShape EntityType="imagesGalleryModel.pictures" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="imagesGalleryModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="imagesGalleryModel.sysdiagrams" Width="1.5" PointX="6.375" PointY="1.625" IsExpanded="true" />
         <EntityTypeShape EntityType="imagesGalleryModel.user" Width="1.5" PointX="0.75" PointY="3.125" IsExpanded="true" />
         <AssociationConnector Association="imagesGalleryModel.FK_comments_comments" ManuallyRouted="false" />
         <AssociationConnector Association="imagesGalleryModel.FK_comments_pictures" ManuallyRouted="false" />

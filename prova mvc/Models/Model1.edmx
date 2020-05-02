@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="imagesGalleryModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="imagesGalleryModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="comments">
           <Key>
             <PropertyRef Name="id" />
@@ -15,6 +15,7 @@
           <Property Name="user_id" Type="int" />
           <Property Name="picture_id" Type="int" />
           <Property Name="parent_comment_id" Type="int" />
+          <Property Name="position" Type="int" />
         </EntityType>
         <EntityType Name="pictures">
           <Key>
@@ -116,8 +117,7 @@
             <End Role="pictures" EntitySet="pictures" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="imagesGalleryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -135,6 +135,7 @@
           <NavigationProperty Name="comments2" Relationship="Self.FK_comments_comments" FromRole="comments1" ToRole="comments" />
           <NavigationProperty Name="pictures" Relationship="Self.FK_comments_pictures" FromRole="comments" ToRole="pictures" />
           <NavigationProperty Name="user" Relationship="Self.FK_comments_user" FromRole="comments" ToRole="user" />
+          <Property Name="position" Type="Int32" />
         </EntityType>
         <EntityType Name="pictures">
           <Key>
@@ -249,6 +250,7 @@
           <EntitySetMapping Name="comments">
             <EntityTypeMapping TypeName="imagesGalleryModel.comments">
               <MappingFragment StoreEntitySet="comments">
+                <ScalarProperty Name="position" ColumnName="position" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="comment_date" ColumnName="comment_date" />
                 <ScalarProperty Name="comment" ColumnName="comment" />

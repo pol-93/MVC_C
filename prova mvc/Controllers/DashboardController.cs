@@ -13,8 +13,8 @@ namespace prova_mvc.Controllers
         public ActionResult Index()
         {
            
-                user currentUser = (user)Session["user"];
-                List<PicturesTableViewModel> lst = null;
+            user currentUser = (user)Session["user"];
+            List<PicturesTableViewModel> lst = null;
             using (imagesGalleryEntities db = new imagesGalleryEntities())
             {
                 try
@@ -29,6 +29,7 @@ namespace prova_mvc.Controllers
                                user_id = p.user_id,
                                picture_varchar = p.picture_path
                            }).ToList();
+                
                     return View(lst);
 
 

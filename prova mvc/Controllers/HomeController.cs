@@ -28,8 +28,6 @@ namespace prova_mvc.Controllers
             ViewBag.Title = "Your contact page." + username + " y " + password;
             using (imagesGalleryEntities db = new imagesGalleryEntities())
             {
-                //db.Database.ExecuteSqlCommand("insert into Table1 values(1088, 'Conditioner', 'expense4',590);");
-                //var query = db.user.SqlQuery("select * from dbo.user").ToList<user>();
                 var lst = from d in db.user
                           where d.username == username && d.password == password
                           select d;

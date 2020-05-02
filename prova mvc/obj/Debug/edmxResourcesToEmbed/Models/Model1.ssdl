@@ -10,6 +10,7 @@
     <Property Name="user_id" Type="int" />
     <Property Name="picture_id" Type="int" />
     <Property Name="parent_comment_id" Type="int" />
+    <Property Name="position" Type="int" />
   </EntityType>
   <EntityType Name="pictures">
     <Key>

@@ -33,6 +33,5 @@ namespace prova_mvc.Models
         public virtual user user { get; set; }
 
         public HttpPostedFileBase imageFile { get; set; }
-
     }
 }

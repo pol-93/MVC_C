@@ -130,6 +130,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PictureController.cs" />
     <Compile Include="Controllers\PublishController.cs" />
     <Compile Include="Filters\VerifySession.cs" />
     <Compile Include="Global.asax.cs">
@@ -159,6 +160,8 @@
     <Compile Include="Models\sysdiagrams.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\TableViewModels\PictureWithCommentsModel.cs" />
+    <Compile Include="Models\TableViewModels\ComentsTableViewModel.cs" />
     <Compile Include="Models\TableViewModels\PicturesTableViewModel.cs" />
     <Compile Include="Models\user.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -224,6 +227,7 @@
     <Content Include="Views\Shared\_LayoutLogin.cshtml" />
     <Content Include="Views\Publish\index.cshtml" />
     <Content Include="Views\Publish\Add.cshtml" />
+    <Content Include="Views\Picture\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
