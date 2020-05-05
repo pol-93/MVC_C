@@ -12,6 +12,7 @@ namespace prova_mvc.Models.TableViewModels
         public string data_coment;
         public int? parent_id;
         public string username;
+        public int? pictureId;
         public List<ComentsTableViewModel> childComments;
     }                   
 }

@@ -92,43 +92,43 @@
                                         </div>
                                     </div>
                                     <div class="user-comment">
-                                        <div class="replys">
-                                            @if (maincomments.childComments.Count > 0)
+                                        
+                                        @if (maincomments.childComments.Count > 0)
+                                        {
+                                            foreach (var childComments in maincomments.childComments)
                                             {
-                                                foreach (var childComments in maincomments.childComments)
-                                                {
-                                                    <div class="reply">
-                                                        <svg class="icon">
-                                                            <use xlink:href="#user" />
-                                                        </svg>
-                                                        <span class="username">
-                                                            <span>@childComments.username</span>
-                                                            <span>
-                                                                @childComments.comments
-                                                            </span>
+                                            <div class="comment-container">
+                                                <div class="comment-user-name reply">
+                                                    <svg class="icon">
+                                                        <use xlink:href="#user" />
+                                                    </svg>
+                                                    <span class="username">
+                                                        <span>@childComments.username</span>
+                                                        <span>
+                                                            @childComments.comments
                                                         </span>
-                                                        <div class="replys-link">
-                                                            <button class="reply-comment">
-                                                                <span>reply</span>
+                                                    </span>
+                                                    <div class="replys-link">
+                                                        <button class="reply-comment">
+                                                            <span>reply</span>
+                                                        </button>
+                                                        @if (childComments.childComments.Count > 0)
+                                                        {
+                                                            <svg class="icon circle">
+                                                                <use xlink:href="#circle" />
+                                                            </svg>
+                                                            <button data-comment='{"commentId" : @childComments.id, "PictureId" :  @childComments.pictureId }' class="load-replys">
+                                                                <span>view @childComments.childComments.Count replys </span>
                                                             </button>
-                                                            @if (childComments.childComments.Count > 0)
-                                                            {
-                                                                <svg class="icon circle">
-                                                                    <use xlink:href="#circle" />
-                                                                </svg>
-                                                                <button class="see-replys">
-                                                                    <span>view @childComments.childComments.Count replys </span>
-                                                                </button>
-                                                            }
-                                                        </div>
+                                                        }
                                                     </div>
-                                                }
+                                                </div>
+                                            </div>
                                             }
-                                        </div>
+                                        }
                                     </div>
                                 </div>
                             </div>
-                            
                         }
                     </div>
                 }
